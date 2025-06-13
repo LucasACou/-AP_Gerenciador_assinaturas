@@ -53,8 +53,11 @@ npx react-native run-android
 ---
 ## 👥 Integrantes 
 Arthur José Guedes Oliveira - 2222130079
-Bianca Cristina da Silva Barros - 2222130003
-Danielle Lima da Silva - 2222130001
-João Guilherme Dias Farias - 2222130010
-Lucas Assunção Coutinho - 2222130011 
 
+Bianca Cristina da Silva Barros - 2222130003
+
+Danielle Lima da Silva - 2222130001
+
+João Guilherme Dias Farias - 2222130010
+
+Lucas Assunção Coutinho - 2222130011 

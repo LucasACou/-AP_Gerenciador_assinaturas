@@ -7,7 +7,9 @@ Aplicativo mobile desenvolvido em React Native com Firebase Firestore, que permi
 O objetivo é criar uma ferramenta simples e eficiente que auxilie o usuário a acompanhar suas despesas fixas mensais, mostrando de forma clara:
 
 -Total estimado gasto com assinaturas
+
 -Próximas renovações
+
 -Lista completa de serviços recorrentes
 
 ---

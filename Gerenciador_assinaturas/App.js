@@ -10,10 +10,10 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Inicial">
-        <Stack.Screen name="Inicial" component={TelaInicial} />
-        <Stack.Screen name="Adicionar" component={AdicionarAssinatura} />
-        <Stack.Screen name="Assinaturas" component={ListaCompletaAssinatura} />
+      <Stack.Navigator initialRouteName="TelaInicial">
+        <Stack.Screen name="TelaInicial" component={TelaInicial} />
+        <Stack.Screen name="AdicionarAssinatura" component={AdicionarAssinatura} />
+        <Stack.Screen name="ListaCompletaAssinatura" component={ListaCompletaAssinatura} />
       </Stack.Navigator>
     </NavigationContainer>
   );

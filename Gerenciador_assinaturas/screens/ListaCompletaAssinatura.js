@@ -7,7 +7,7 @@ export default function ListaCompletaAssinatura({ navigation }) {
     const [assinaturas, setAssinaturas] = useState({});
 
     useEffect(() => {
-        const unsubscribe = onSnapshot(collection(db, 'assinaturas'), (sanpshot) => {
+        const unsubscribe = onSnapshot(collection(db, assinaturas), (snapshot) => {
             const dados = snapshotEqual.docs.map(doc => ({
                 id: doc.id, ...doc.data()
             }));
@@ -23,7 +23,7 @@ export default function ListaCompletaAssinatura({ navigation }) {
             {
                 text: 'Excluir',
                 style: 'destructive',
-                onPress: async () => { awai deleteDoc(doc(db, 'assinaturas', id));
+                onPress: async () => { await deleteDoc(doc(db, assinaturas, id));
                 }
             }
         ]);
@@ -35,8 +35,8 @@ export default function ListaCompletaAssinatura({ navigation }) {
             <Text>Valor : R$ {item.valor.toFixed(2)}</Text>
             <Text>Renovação: {new Date(item.dataRenovacao.seconds * 1000).toLocaleDateString()}</Text>
             <Text>Categoria: {item.categoria}</Text>
-        <TouchableOpacity/>
+        </TouchableOpacity>
     );
 
-    return ()
+    return;
 }

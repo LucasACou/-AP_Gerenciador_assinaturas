@@ -1,0 +1,1 @@
+# -AP_Gerenciador_assinaturas

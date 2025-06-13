@@ -40,7 +40,7 @@ npm install
 3. **Configurar o Firebase Firestore:**
 
 ```bash
-
+npm install firebase
 ```
 
 4. **Execute a aplicação:**

@@ -51,6 +51,7 @@ npx expo start
 npx react-native run-android
 ```
 ---
+
 ## 👥 Integrantes 
 Arthur José Guedes Oliveira - 2222130079
 

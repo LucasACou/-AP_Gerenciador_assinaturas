@@ -10,7 +10,7 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="TelaInicial">
+      <Stack.Navigator initialRouteName="Inicial">
         <Stack.Screen name="Inicial" component={TelaInicial} />
         <Stack.Screen name="Adicionar" component={AdicionarAssinatura} />
         <Stack.Screen name="Assinaturas" component={ListaCompletaAssinatura} />

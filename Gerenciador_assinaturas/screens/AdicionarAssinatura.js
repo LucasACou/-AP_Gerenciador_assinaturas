@@ -19,7 +19,7 @@ export default function AdicionarAssinatura({ navigation }) {
             await addDoc(collection(db, 'assinaturas'), {
                 nome,
                 valor: parseFloat(valor),
-                dataRenovacao: Timestamp.fromDate(newDate(dataRenovacao)),
+                dataRenovacao: Timestamp.fromDate(new Date(dataRenovacao)),
                 categoria,
                 criadoEm: Timestamp.now()
             });

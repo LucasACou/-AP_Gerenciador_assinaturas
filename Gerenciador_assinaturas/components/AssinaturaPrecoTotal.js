@@ -1,19 +1,26 @@
+import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-function AssinaturaPrecoTotal({ assinaturas, periodo }) {
-  const somaAssinaturas = assinaturas.reduce((total, assinaturas) => {
-    return total + assinaturas.valor;
-  }, 0);
+export default function AssinaturaPrecoTotal({ dados }) {
+  const total = dados.reduce((sum, item) => sum + parseFloat(item.valor || 0), 0).toFixed(2);
 
   return (
-    <View style={styles}>
-      <Text>Resumo Financeiro</Text>
-      <Text style={styles}>{periodo}</Text>
-      <Text style={styles}>R$ {somaAssinaturas.toFixed(2)}</Text>
+    <View style={styles.container}>
+      <Text style={styles.titulo}>Total Estimado: R$ {total}</Text>
     </View>
   );
 }
 
-export default AssinaturaPrecoTotal;
-
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    marginBottom: 20,
+    padding: 10,
+    backgroundColor: '#dbeafe',
+    borderRadius: 8,
+  },
+  titulo: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#1e3a8a',
+  },
+});
